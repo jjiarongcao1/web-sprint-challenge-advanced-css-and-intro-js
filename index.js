@@ -208,14 +208,14 @@ const artists = [
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
 
-// console.log(artists[0].name);
-// console.log(artists[2].bio);
+console.log(artists[0].name);
+console.log(artists[2].bio);
 
 
 
 // /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
-// artists[8].name = "Vincent Van Gogh";
-// console.log(artists[8].name);
+artists[8].name = "Vincent Van Gogh";
+console.log(artists[8].name);
 
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
@@ -226,35 +226,35 @@ const artists = [
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-// function getArtistByIndex(id, name) {
-//     /* code here */
-//     if(id === id && name === name){
-//     return "The artist at index " + id + " is " + name;
-//   };
-// }
+function getArtistByIndex(id, name) {
+    /* code here */
+    if(id === id && name === name){
+    return "The artist at index " + id + " is " + name;
+  };
+}
   
-// console.log(getArtistByIndex(0, "Amedeo Modigliani"));
+console.log(getArtistByIndex(0, "Amedeo Modigliani"));
   /**
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
-// function get20s(artists) {
-//   /* Code here */
-//   let bornInThe20th = [];
-//   let bornNum = [];
+function get20s(artists) {
+  /* Code here */
+  let bornInThe20th = [];
+  let bornNum = [];
 
-//   for(let i = 0; i < artists.length; i++) {
-//       bornNum = parseInt(artists[i].years);
+  for(let i = 0; i < artists.length; i++) {
+      bornNum = parseInt(artists[i].years);
 
-//       if(bornNum >= 1900 && bornNum <= 2000) {
-//           bornInThe20th.push(artists[i].name);        
-//       }
-//     }
-//         return bornInThe20th; 
-// }
+      if(bornNum >= 1900 && bornNum <= 2000) {
+          bornInThe20th.push(artists[i].name);        
+      }
+    }
+        return bornInThe20th; 
+}
 
-// console.log(get20s(artists));
+console.log(get20s(artists));
 
 
 
@@ -269,14 +269,14 @@ const artists = [
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-// function removeArtist(artists, indexNum) {
-//     /* code here */
-//     artists.splice(indexNum, 1);
-//     console.log(artists);
-// 
-//   }
+function removeArtist(artists, indexNum) {
+    /* code here */
+    artists.splice(indexNum, 1);
+    console.log(artists);
+
+  }
   
-//   removeArtist(artists, 0);
+  removeArtist(artists, 0);
   /**
 
 
@@ -293,22 +293,22 @@ nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) 
 
 At the end, this function should console.log() the new array with information added"*/
-// let newMember = [ {
-//   "id": 20,
-//   "name": "Alex J. Cao",
-//   "years": "1991 -- Present",
-//   "genre": "Web Developer",
-//   "nationality": "Chinese",
-//   "bio": "Becoming a Software Engineer",
-//   }
-// ]
+let newMember = [ {
+  "id": 20,
+  "name": "Alex J. Cao",
+  "years": "1991 -- Present",
+  "genre": "Web Developer",
+  "nationality": "Chinese",
+  "bio": "Becoming a Software Engineer",
+  }
+]
 
-// function addArtist(artists, newArr) {
-//     artists.push(newArr);
-//     console.log(artists);
-//   }
+function addArtist(artists, newArr) {
+    artists.push(newArr);
+    console.log(artists);
+  }
 
-// addArtist(artists, newMember);
+addArtist(artists, newMember);
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
